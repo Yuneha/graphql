@@ -1,0 +1,134 @@
+#main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+nav ul {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  border-right: 1px solid rgb(255, 255, 255);
+  box-shadow: 3px 0px 6px rgba(255, 255, 255, 0.5);
+  gap: 50px;
+  font-size: 30px;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  scale: calc(110%);
+}
+nav ul li.active {
+  color: rgb(164, 181, 215);
+}
+
+#main h3 {
+  position: sticky;
+  top: 10px;
+  font-size: 42px;
+  text-align: center;
+}
+
+#main h4 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+#xp,
+#audit_done,
+#audit_received {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#audit_ratio {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+#cursus_content {
+  scrollbar-width: none;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.container {
+  margin-inline: 70px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+#div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+#div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+#div3 {
+  grid-area: 2 / 1 / 4 / 3;
+}
+#div4 {
+  grid-area: 4 / 1 / 6 / 3;
+}
+
+.box {
+  background-color: rgb(61, 72, 102);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px 0px rgba(255, 255, 255, 0.5);
+}
+
+#logout {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+#logout:hover {
+  color: rgb(164, 181, 215);
+}
+
+.labeldone {
+  font-size: 18px;
+  font-weight: bold;
+  fill: rgb(0, 128, 0);
+}
+
+.bar0 {
+  fill: rgb(0, 128, 0);
+}
+
+.bar1 {
+  fill: rgb(255, 255, 0);
+}
+
+.labelreceived {
+  font-size: 18px;
+  font-weight: bold;
+  fill: rgb(255, 255, 0);
+}
+
+#skills_chart text {
+  fill: rgb(255, 255, 255);
+}

@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/frontend/static/css/index.css">
+    <title>GRAPHQL</title>
+</head>
+
+<body>
+    <section id="login_page">
+        <h1>Welcome to GRAPHQL</h1>
+        <div class="form">
+            <h2>LOGIN</h2>
+            <p id="wrong_user" class="error_message"></p>
+            <input id="username_login" type="text" placeholder="Enter username or email" required>
+            <input id="password_login" type="password" placeholder="Enter password" required>
+            <button id="button_login" type="button" onclick="login()">CONNECT</button>
+        </div>
+    </section>
+    <section id="main_page">
+        <div id="main">
+            <a id="logout" onclick="location.reload()">LOGOUT</a>
+            <nav>
+                <ul>
+                    <h1 id="dashboard"></h1>
+                    <li id="cursus" class="active">Cursus</li>
+                </ul>
+            </nav>
+
+            <section id="cursus_content">
+                <h3>Cursus</h3>
+                <div class="container">
+                    <div id="div1" class="box">
+                        <h4>Current XP</h4>
+                        <span id="xp"></span>
+                    </div>
+
+                    <div id="div2" class="box">
+                        <h4>Audits Ratio</h4>
+                        <span id="audit_done"></span>
+                        <div id="audit_chart"></div>
+                        <span id="audit_received"></span>
+                        <span id="audit_ratio"></span>
+                    </div>
+
+                    <div id="div3" class="box">
+                        <h4>Skills</h4>
+                        <div id="skills_chart"></div>
+                    </div>
+            </section>
+        </div>
+    </section>
+</body>
+
+<script src="../js/index.js" defer></script>
+<script src="../js/audit_chart.js" defer></script>
+<script src="../js/skills_chart.js" defer></script>
+
+</html>

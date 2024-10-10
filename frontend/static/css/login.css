@@ -1,0 +1,52 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 3px 3px 8px 0px rgba(255, 255, 255, 0.5);
+}
+
+.form input,
+.form button {
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  width: 400px;
+}
+
+.form input::placeholder {
+  color: rgb(74, 89, 120);
+  text-align: center;
+}
+
+.form input {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.form button {
+  font-weight: bold;
+  color: rgb(74, 89, 120);
+  padding: 5px;
+}
+
+.form button:hover {
+  cursor: pointer;
+  background-color: rgb(164, 181, 215);
+}
+
+.form input:focus {
+  outline: none;
+  background-color: rgb(164, 181, 215);
+}
+.form input:focus::placeholder {
+  color: transparent;
+}
+
+#wrong_user {
+  display: none;
+}
