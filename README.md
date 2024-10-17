@@ -17,7 +17,7 @@ GRAPHQL is a cursus project from Zone01. This project display on a website some 
 
 1. Open your web browser
 
-2. go to ([https://yuneha.github.io/graphql/](https://yuneha.github.io/graphql/))
+2. go to [https://yuneha.github.io/graphql/](https://yuneha.github.io/graphql/)
 
 ## License
 
