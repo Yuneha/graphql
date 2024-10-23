@@ -136,7 +136,9 @@ async function login() {
       .then(() => {
         document.getElementById("login_page").style.display = "none";
         document.getElementById("main_page").style.display = "block";
-        document.getElementById("dashboard").innerHTML = `${user.login}`;
+        document.getElementById(
+          "dashboard"
+        ).innerHTML = `${user.attrs.firstName} ${user.attrs.lastName}`;
         cursus();
       });
   }
