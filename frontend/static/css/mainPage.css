@@ -103,6 +103,7 @@ nav ul li.active {
   top: 20px;
   right: 20px;
   cursor: pointer;
+  z-index: 9;
 }
 
 #logout:hover {
